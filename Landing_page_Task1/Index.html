@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="abc.js"></script> -->
+   
+    <title>Garg Properties</title>
+   
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Garg Properties</a></div>
+            <ul class="links">
+                <li><a href="about">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Call Now</a>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#about">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li> <a href="#" class="action_btn">Call Now</a></li>
+        </div>
+    </header>
+    <main>
+        <section class="section1" id="about">
+            <div class="data">
+                <h1>Buy Your Dream House</h1>
+                <p>Deals in all kinds of sales/ purchase of Houses,Flats,Shops.<br>
+                    Also Deals in Construction Materials Such as Bricks,Soil etc.</p>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="row">
+                <h2>Popular Properties</h2>
+            </div>
+            <div class="Popular_container">
+                <div class="prop">
+                    <div class="info">
+                        <img src="apartments.jpeg" alt="">
+                        <button class="btn btn1">Sale</button>
+                        <ul class="info1">
+                            <li>1200 Sqft</li>
+                            <li>2 Bed-Bath</li>
+                            <li>Balcony</li>
+                            <li>Park</li>
+                            <button class="btn">Book Now</button>
+                        </ul>
+                    </div>
+
+                    <div class="info">
+                        <img src="flats.jpg" alt="">
+                        <ul class="info1">
+                            <button class="btn btn1">Rent</button>
+                            <li>1200 Sqft</li>
+                            <li>2 Bed-Bath</li>
+                            <li>Balcony</li>
+                            <li>Park</li>
+                            <button class="btn">Book Now</button>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <img src="2bhk.jpg" alt="">
+                        <ul class="info1">
+                            <button class="btn btn1">Sale</button>
+                            <li>1200 Sqft</li>
+                            <li>2 Bed-Bath</li>
+                            <li>Balcony</li>
+                            <li>Park</li>
+                            <button class="btn">Book Now</button>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="Add_property">
+                <h2>Add Your Property Here </h2>
+               <button class="btn">Add Property</button>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <footer >
+            <div class="detailsSection">
+               
+               <div class="quickLinks">
+                   <div>
+                      <h2>Quick Links</h2>
+                      <ul>
+                         <li><a href="#home"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Home</a></li>
+                         <li><a href="#about"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>About</a></li>
+                         <li><a href="#pricing"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Pricing</a></li>
+                         <li><a href="#"><i class="fa fa-solid fa-chevron-up fa-rotate-90"></i>Contact</a></li>
+                      </ul> 
+                   </div>
+               </div>
+               <div class="contactDetails">
+                    <div>
+                       <h2>Contact Info</h2>
+                       <span><i class="fa fa-solid fa-phone"></i>91+XXXXXXX</span>
+                       <span><i class="fa fa-solid fa-envelope"></i>email23@gmail.com</span>
+                       <span><i class="fa fa-solid fa-globe"></i>punjab,India-140401</span>
+                       <span class="socialLinks">
+                        <ul>
+                            <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-github"></i></a></li>
+                            <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-twitter"></i></a></li>
+                            <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-instagram"></i></a></li>
+                            <li><a href="/" class="eachSocialLink"><i class="fa fa-brands fa-codepen"></i></a></li>
+                        </ul>
+                       </span>
+                    </div>
+               </div>
+            </div>
+            <div class="copyrightSection">
+                <p>&copy;copyright2023</p>
+            </div>
+    </footer>
+    <script>
+        const togglebtn = document.querySelector('.toggle_btn')
+        const togglebtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            togglebtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+    </script>
+</body>
+
+</html>
