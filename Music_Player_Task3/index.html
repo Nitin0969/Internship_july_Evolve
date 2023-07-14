@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <section class="playerPage">
+         <div class="player">
+            <div class="songImage">
+                <img src="Media/1.jpeg"alt="Song Image" id="songImageTag" class="songImagTag" >
+            </div>
+            <div class="songName" id="songName">
+                <p>Song Name</p>
+            </div>
+            <div class="songArtist" id="songArtist">
+                <p>Song Artist</p>
+            </div>
+            <div class="songControls">
+                <div class="songButtons">
+                  
+                    <div class="previousBtn" id="previousBtn" onclick="previousSong()" title="Previous" >
+                        <i class="fa-solid fa-backward"></i> </div>
+                    <div class="playPauseBtn" id="playPauseBtn" onclick="playPauseSong()" title="Play Or Pause"><i class="fa fa-solid fa-play"></i></div>
+                    <div class="nextBtn" id="nextBtn" onclick="nextSong()" title="Next"><i class="fa-solid fa-forward"></i>
+                         </div>
+                    
+                </div>
+                <div class="songSeek">
+                    <span class="initialTime" id="initialTime">00:00</span>
+                    <input type="range" class="songSeekInput" id="songSeekInput" min="0" max="100" onchange="changeTime(event)">
+                    <span class="finalTime" id="finalTime"></span>
+                </div>
+                
+            </div>
+         </div>
+     </section>
+    <script src="https://kit.fontawesome.com/ae82594478.js" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</body>
+</html>
