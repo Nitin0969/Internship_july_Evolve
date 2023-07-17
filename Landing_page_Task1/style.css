@@ -276,6 +276,10 @@
         }
 
         @media(max-width:576px) {
+            .section3{
+             margin-left: 12px;
+            }
+
             .dropdown_menu {
                 left: 2rem;
                 width: unset;
@@ -310,6 +314,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     box-shadow: 1px 1px 3px black;
+    margin-left: 20px;
 }
 footer>.detailsSection{
     height: 100%;
